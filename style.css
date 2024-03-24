@@ -1,0 +1,54 @@
+body {
+    overflow-x: hidden;
+}
+
+main .inicio {
+        height: 90vh;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    main .inicio::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url("https://raw.githubusercontent.com/giselepad/projeto-casamento/main/background-main.jpg");
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* filter: brightness(80%) blur(3px); */
+        z-index: -2;
+    }
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.main-content .title {
+    width: 50%;
+    background-color: #f4bda0;
+}
+
+h1 {
+    text-align: right;
+}
+.main-content img {
+    width: 100%;
+}
+
+
+.main-content .content__img {
+    width: 50%;
+}
